@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* ============  Variaveis  ================ */
+
+:root{
+    --cor-de-fundo: #000;
+    --color-contrast: #fff;
+    --base-color: rgb(199, 131, 199);
+    --distance-lateral: 5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--cor-de-fundo);
+}
+
+/* ============  Barra de navegação  ================ */
+header, .mainBar{
+    width: 100%;
+    box-sizing: border-box;
+}
+.mainBar{
+    height: 5rem;
+    background-color: var(--cor-de-fundo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--distance-lateral) ;
+    position: fixed;
+    top: 0;
+    opacity: .8;
+}
+.mainBar .logo{
+    font-size: 1.5rem;
+}
+.mainBar ul{
+    display: flex;
+    flex-direction: row;
+
+}
+.mainBar a, .mainBar li{ 
+    color: var(--color-contrast);
+    text-decoration: none;
+}
+.mainBar li a{
+    padding: 0.5rem;
+    transition: .5s;
+}
+.mainBar li a:hover{
+    color: var(--base-color);
+}
+input[name="check"]{
+    display: none;
+    z-index: 2;
+    transition: ease 0.5s;
+}
+.mainBar .mainBarOff{
+    display: none;
+}
+
+/* ========== Section n° 1 ===========*/
+
+    .section{
+        margin: 0 auto;
+        height: calc(100vh - 5rem);
+        width: 100%;
+        background: linear-gradient(90deg, rgb(255, 101, 101) 0%, rgba(150,116,161,1) 100%);
+        
+    } 
+    
+    .mainIndex{
+        height: 100%;    
+        max-width: 700px;
+        margin: 5rem auto 0 auto;
+        padding: 15% 0 5% 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        
+        text-align: center;
+}
+.titleH1{
+    font-size: 5.3rem;
+    line-height: 6.3rem;
+}
+.buttomDownload{
+    padding: 1rem 2rem;
+    background-color: var(--color-contrast);
+    border-radius: 3rem;
+    color: var(--base-color);
+    font-weight: bold;
+    transition: .25s;
+}
+.buttomDownload:hover{
+    padding: 1.00rem 2.5rem;
+}
+
+/* ========== Footer ===========*/
+
+.controllerGrid, .controllerGrid a{
+    color: var(--color-contrast);
+}
+.controllerGrid{
+    padding: 2rem var(--distance-lateral);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footerLogo{
+    font-size: 2rem;
+}
+.controllerGrid .flexContainer .logos{
+    display: flex;
+    justify-content: right;
+    font-size: 1.5rem;
+}
+.controllerGrid .flexContainer .logos li{
+    margin: .5rem;
+}
+.subTopico{
+    color: grey;
+    margin-bottom: .5rem;
+}
+.flexContainer{
+    padding-top: 1.5rem;
+    flex: 0 1 180px;
+    margin-bottom: 1rem;
+}
+.flexContainerSpotivy{
+    flex: 0 1 180px;
+
+
+}
+.flexContainer ul li a:hover{
+    color:var(--base-color);
+}
+.order-1{
+    order:1;
+}
+.order-2{
+    order:2;
+}
+.order-3{
+    order:3;
+}
+.order-4{
+    order:4;
+}
+.order-logos{
+    order:5;
+}
+/* ========== Media = 1025px ===========*/
+
+@media(max-width: 1000px){
+
+/* ========== Header ===========*/ 
+
+.mainBar ul{
+    position: fixed;
+    width: 300px;
+    right: 0px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    top: 0;
+    right: -300px;
+    transition: ease 0.5s;
+    background-color: var(--cor-de-fundo);
+    
+}
+.mainBar{
+    opacity: 1;
+}
+.mainBar .mainBarOff{
+    display: block;
+}
+.mainBar ul li{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 15%;
+    width: 90%;
+}
+.mainBar ul li a{
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+}
+input[name="check"]{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+input[name="check"]:checked ~ .menuExpansivo{
+    right: 0;    
+}
+
+/* ========== Section n°1 ===========*/
+
+
+/* ========== Footer ===========*/ 
+        .order-1{
+        flex: 1 1 100%;
+        margin: 1rem 0;
+    }
+    .order-logos{
+        flex: 1 1 100%;
+    }
+    .flexContainer{
+    padding: 0;        
+    }
+
+    .controllerGrid .flexContainer .logos{
+        justify-content: left;
+    }
+    
+}
