@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dev. Rog</title>
+</head>
+<body>
+    <nav class="header ">
+        <a href="#" class="Logo">Dev.Rog</a>
+        <input type="checkbox" name="Day" id="Day" class="disable">
+        <ul class="flexList">
+            <li><a href="#initial">Início</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#portifolio">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    <section class="initial" id="initial">
+        <div class="text z-index2">
+            <p class="euSou-Text">Olá, eu sou <br><span class="colorName">Rogério Junior</span>, um Desenvolvedor Full-Stack!</p>
+            <p class="euSou-detail-text">   Sou um desenvolvedor Full-Stack, formado em Análise e Desenvolvimento de sistemas, e atualmente cursando Engenharia da Computação. Busco sempre desenvolver aplicações funcionais e harmônicas.
+            </p>
+            <button class="cv" id="cv">Download Cv</button>
+        </div>
+    <img src="./img/image.jpg" alt="Minha imagem" class="z-index2">
+    <div class="circle-Container">
+        <div class="circle"></div>
+    </div>
+    <div class="absolute100 overflowH">
+        <div class="area-detect absolute100" id="AreaDetect"></div>
+        <div class="hexagon-container absolute100" id="HexagonSVG"></div>
+        <div class="light" id="Light"></div>
+        <div class="shadowInset absolute100"></div>
+    </div>
+
+    </section>
+    <section class="skills" id="skills">
+        
+            <div class="relative100">
+                <H1 class="title">Habilidades</h1>
+                    <p class="aligncenter">Clique com o mouse em algum dos campos para o inspecionar!</p>
+                <div class="flex-evenly">
+
+		    <div class="info-disable" id="infoDisable">
+                        <label id="close"> X <input class="close-info" type="checkbox" name="info" /></label>
+			<div class="issai"><h1 class="title" id="titleValue">" " </h1></div>
+			<img src="" id="imgValue" /> 			
+			<p class="" id="textValue">" "</p>
+                    </div>
+                    <div class="flexrow" alt="Selecione a opção">
+                        <div class="skill-container" > 
+                        <img src="./img/js.svg" alt="JavaScript" id="javascript">
+                        </div>
+                        <div class="skill-container"> 
+                            <img src="./img/mysql.svg" alt="MySQL"> 
+                        </div>
+                        <div class="skill-container"> 
+                            <img src="./img/python.svg" alt="JavaScript"> 
+                        </div>
+                        <div class="skill-container"> 
+                            <img src="./img/node.svg" alt="Node"> 
+                        </div>
+                        <div class="skill-container"> 
+                            <img src="./img/react.svg" class="spinreact" alt="React" id=""> 
+                        </div>
+                        <div class="skill-container"> 
+                            <img src="./img/angular.svg" alt="Angular"> 
+                        </div>
+                    </div>
+
+                <div class="skillsAnimation" id="AnimationSkills">
+                    <div class="cat-Element" >
+                        <img src="./img/catimg.png" class="catimg" alt="">
+                    </div> 
+                    <div class="path-Element"></div>
+                    <div class="human-Element" >
+                        <img src="./img/man.png" alt="">
+                    </div> 
+                    <div class="animation-Element"></div>
+                </div>
+            </div>
+        </div>
+        <div>
+        <div class="fallstars">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        </section> 
+    <section class="portifolio" id="portifolio">
+        <h1 class="title">Projetos</h1>
+		<p class="subtitle">Estes projetos encontram-se disponiveis em meu Github.</p>
+        <div class="projectContainer">
+            <div id="ProjectContainer">
+                <img src="./img/landingpage.PNG" alt="Projeto Atual">
+                <img src="./img/aws.PNG" alt="Projeto Atual">
+                <img src="./img/landingpage.PNG" alt="Projeto Atual">
+                <img src="./img/landingpage.PNG" alt="Projeto Atual">
+            </div>
+        </div>
+		<div class="projectOptions">
+			<div class="content" id="project1">
+				<img src="./img/landingpage.PNG" alt="Projeto Atual">
+				<p>Landing Page</p>			
+			</div>
+			<div class="content" id="project2">
+				<img src="" alt="Slider">
+				<p>Slider</p>			
+			</div>
+			<div class="content" id="project3">
+				<img src="img/aws.PNG" alt="AWS Practitioner">
+				<p>AWS Practitioner (Em desenvolvimento)</p>			
+			</div>
+			<div class="content" id="project4">
+				<img src="./img/200px.jpg" alt="Spotify Clone">
+				<p>Spotify Clone</p>			
+			</div>
+		</div>
+    </section>
+    <footer class="contact">
+        <h1>Contate-me</h1>
+        <ul>
+            <li>Siga-me nas minhas redes sociais:</li>
+            <li><i class="gg-instagram"></i></li>
+            <li></li>
+        </ul>
+    </section>
+    <div class="fixed"></div>
+    <script src="script.js"></script>
+</body>
+</html>
