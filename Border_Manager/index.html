@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>BorderManager</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    
+    <div class="container" id="container">
+      Your text!!!
+    </div>
+    <div class="editors">
+      <h1 class="title">Border Manager - 1#</h1>
+      <ul class="list-button">
+        <li>Border size: <input type="number" name="borderSize" id="borderSize" value="1" /></li>
+        <li>Border-Color: <input type="color" name="borderColor" id="borderColor" value="#000000" /></li>
+        <li>Border Style: <br />
+        Solid - <input type="radio" name="borderStyle" id="borderStyle" value="solid" checked /> 
+        <br /> Dotted - <input type="radio" name="borderStyle" id="borderStyle" value="dotted"/> 
+        <br /> Dashed <input type="radio" name="borderStyle" id="borderStyle"                                           value="dashed"/></li>
+        
+        <li>Border Radius: <input type="number" name="borderRadius" id="borderRadius" value="0" min="0" max="100000"/> <select name="unidadeMedida" id="unidMedida">
+          <option value="px">pixels</option>
+          <option value="rem">rem</option>
+          <option value="%">%</option>
+        </select></li>
+        <li><button id="generate"> Generate </button></li>
+      </ul>
+    </div>
+    <div>
+      <input type="text" value="" class="copyContainer" id="copyContainer"> <input type="button" value="Copy" id="copyButton">
+    </div>
+    
+    <script type="text/javascript" charset="utf-8" src="./script.js"></script>
+  </body>
+</html>
